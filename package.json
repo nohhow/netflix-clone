@@ -2,6 +2,7 @@
   "name": "react-netflix-clone",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://nohhow.github.io/netflix-clone/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
@@ -41,6 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "http://nohhow.github.io/netflix-clone"
+  }
 }

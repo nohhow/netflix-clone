@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://nohhow.github.io/netflix-clone/static/css/main.146a7883.css",
-    "main.js": "https://nohhow.github.io/netflix-clone/static/js/main.78f06d77.js",
-    "static/js/787.7d8a7a6f.chunk.js": "https://nohhow.github.io/netflix-clone/static/js/787.7d8a7a6f.chunk.js",
-    "index.html": "https://nohhow.github.io/netflix-clone/index.html",
-    "main.146a7883.css.map": "https://nohhow.github.io/netflix-clone/static/css/main.146a7883.css.map",
-    "main.78f06d77.js.map": "https://nohhow.github.io/netflix-clone/static/js/main.78f06d77.js.map",
-    "787.7d8a7a6f.chunk.js.map": "https://nohhow.github.io/netflix-clone/static/js/787.7d8a7a6f.chunk.js.map"
+    "main.css": "http://nohhow.github.io/netflix-clone/static/css/main.146a7883.css",
+    "main.js": "http://nohhow.github.io/netflix-clone/static/js/main.749fb08f.js",
+    "static/js/787.7d8a7a6f.chunk.js": "http://nohhow.github.io/netflix-clone/static/js/787.7d8a7a6f.chunk.js",
+    "index.html": "http://nohhow.github.io/netflix-clone/index.html",
+    "main.146a7883.css.map": "http://nohhow.github.io/netflix-clone/static/css/main.146a7883.css.map",
+    "main.749fb08f.js.map": "http://nohhow.github.io/netflix-clone/static/js/main.749fb08f.js.map",
+    "787.7d8a7a6f.chunk.js.map": "http://nohhow.github.io/netflix-clone/static/js/787.7d8a7a6f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.146a7883.css",
-    "static/js/main.78f06d77.js"
+    "static/js/main.749fb08f.js"
   ]
 }

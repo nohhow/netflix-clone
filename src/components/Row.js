@@ -3,7 +3,10 @@ import React, { useEffect, useState } from "react";
 import "./Row.css";
 import MovieModal from "./MovieModal";
 import { Swiper, SwiperSlide } from "swiper/react";
+import {Navigation} from "swiper";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Row = ({ title, fetchUrl, id, isLargeRow }) => {
   const [movies, setMovies] = useState([]);
@@ -30,18 +33,30 @@ const Row = ({ title, fetchUrl, id, isLargeRow }) => {
     <section className="row">
       <h2>{title}</h2>
       <div className="slider">
-        <div className="slider_arrow_left">
-          <span
-            className="arrow"
-            onClick={() => {
-              document.getElementById(id).scrollLeft -= window.innerWidth - 80;
+        <div id={id} className="row_posters">
+          <Swiper
+            modules={[Navigation]}
+            spaceBetween={20}
+            navigation
+            breakpoints={{
+              1378: {
+                slidesPerView: `${isLargeRow ?  7 : 6}`,
+                slidesPerGroup: `${isLargeRow ?  7 : 6}`
+              },
+              998: {
+                slidesPerView: `${isLargeRow ?  6 : 5}`,
+                slidesPerGroup: `${isLargeRow ?  6 : 5}`
+              },
+              625: {
+                slidesPerView: `${isLargeRow ?  5 : 4}`,
+                slidesPerGroup: `${isLargeRow ?  5 : 4}`
+              },
+              0: {
+                slidesPerView: `${isLargeRow ?  4 : 3}`,
+                slidesPerGroup: `${isLargeRow ?  4 : 3}`
+              },
             }}
           >
-            {"<"}
-          </span>
-        </div>
-        <div id={id} className="row_posters">
-          <Swiper slidesPerView={`${isLargeRow ? "7" : "6"}`} spaceBetween={20}>
             {movies.map((movie) => (
               <SwiperSlide key={movie.id}>
                 <img
@@ -55,16 +70,6 @@ const Row = ({ title, fetchUrl, id, isLargeRow }) => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-        <div className="slider_arrow_right">
-          <span
-            className="arrow"
-            onClick={() => {
-              document.getElementById(id).scrollLeft += window.innerWidth - 80;
-            }}
-          >
-            {">"}
-          </span>
         </div>
       </div>
       {modalOpen && (

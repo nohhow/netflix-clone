@@ -132,3 +132,7 @@
       max-height: 280px;
     }
   }
+
+  .swiper-button-prev, .swiper-button-next {
+    color : #fff !important;
+  }
